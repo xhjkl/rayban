@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3573BA531C1B3B7F00D6852F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA521C1B3B7F00D6852F /* AppDelegate.swift */; };
+		3573BA551C1B3B7F00D6852F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA541C1B3B7F00D6852F /* ViewController.swift */; };
+		3573BA581C1B3B7F00D6852F /* Rayban.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA561C1B3B7F00D6852F /* Rayban.xcdatamodeld */; };
+		3573BA5A1C1B3B7F00D6852F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3573BA591C1B3B7F00D6852F /* Assets.xcassets */; };
+		3573BA5D1C1B3B7F00D6852F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3573BA5B1C1B3B7F00D6852F /* Main.storyboard */; };
+		3573BA681C1B3B7F00D6852F /* RaybanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA671C1B3B7F00D6852F /* RaybanTests.swift */; };
+		3573BA731C1B3B7F00D6852F /* RaybanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA721C1B3B7F00D6852F /* RaybanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3573BA641C1B3B7F00D6852F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3573BA471C1B3B7F00D6852F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3573BA4E1C1B3B7F00D6852F;
+			remoteInfo = Rayban;
+		};
+		3573BA6F1C1B3B7F00D6852F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3573BA471C1B3B7F00D6852F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3573BA4E1C1B3B7F00D6852F;
+			remoteInfo = Rayban;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3573BA4F1C1B3B7F00D6852F /* Rayban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rayban.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3573BA521C1B3B7F00D6852F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3573BA541C1B3B7F00D6852F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3573BA571C1B3B7F00D6852F /* Rayban.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rayban.xcdatamodel; sourceTree = "<group>"; };
+		3573BA591C1B3B7F00D6852F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3573BA5C1C1B3B7F00D6852F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3573BA5E1C1B3B7F00D6852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3573BA631C1B3B7F00D6852F /* RaybanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaybanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3573BA671C1B3B7F00D6852F /* RaybanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaybanTests.swift; sourceTree = "<group>"; };
+		3573BA691C1B3B7F00D6852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3573BA6E1C1B3B7F00D6852F /* RaybanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaybanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3573BA721C1B3B7F00D6852F /* RaybanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaybanUITests.swift; sourceTree = "<group>"; };
+		3573BA741C1B3B7F00D6852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3573BA4C1C1B3B7F00D6852F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3573BA601C1B3B7F00D6852F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3573BA6B1C1B3B7F00D6852F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3573BA461C1B3B7F00D6852F = {
+			isa = PBXGroup;
+			children = (
+				3573BA511C1B3B7F00D6852F /* Rayban */,
+				3573BA661C1B3B7F00D6852F /* RaybanTests */,
+				3573BA711C1B3B7F00D6852F /* RaybanUITests */,
+				3573BA501C1B3B7F00D6852F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3573BA501C1B3B7F00D6852F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3573BA4F1C1B3B7F00D6852F /* Rayban.app */,
+				3573BA631C1B3B7F00D6852F /* RaybanTests.xctest */,
+				3573BA6E1C1B3B7F00D6852F /* RaybanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3573BA511C1B3B7F00D6852F /* Rayban */ = {
+			isa = PBXGroup;
+			children = (
+				3573BA521C1B3B7F00D6852F /* AppDelegate.swift */,
+				3573BA541C1B3B7F00D6852F /* ViewController.swift */,
+				3573BA591C1B3B7F00D6852F /* Assets.xcassets */,
+				3573BA5B1C1B3B7F00D6852F /* Main.storyboard */,
+				3573BA5E1C1B3B7F00D6852F /* Info.plist */,
+				3573BA561C1B3B7F00D6852F /* Rayban.xcdatamodeld */,
+			);
+			path = Rayban;
+			sourceTree = "<group>";
+		};
+		3573BA661C1B3B7F00D6852F /* RaybanTests */ = {
+			isa = PBXGroup;
+			children = (
+				3573BA671C1B3B7F00D6852F /* RaybanTests.swift */,
+				3573BA691C1B3B7F00D6852F /* Info.plist */,
+			);
+			path = RaybanTests;
+			sourceTree = "<group>";
+		};
+		3573BA711C1B3B7F00D6852F /* RaybanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3573BA721C1B3B7F00D6852F /* RaybanUITests.swift */,
+				3573BA741C1B3B7F00D6852F /* Info.plist */,
+			);
+			path = RaybanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3573BA4E1C1B3B7F00D6852F /* Rayban */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3573BA771C1B3B7F00D6852F /* Build configuration list for PBXNativeTarget "Rayban" */;
+			buildPhases = (
+				3573BA4B1C1B3B7F00D6852F /* Sources */,
+				3573BA4C1C1B3B7F00D6852F /* Frameworks */,
+				3573BA4D1C1B3B7F00D6852F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rayban;
+			productName = Rayban;
+			productReference = 3573BA4F1C1B3B7F00D6852F /* Rayban.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3573BA621C1B3B7F00D6852F /* RaybanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3573BA7A1C1B3B7F00D6852F /* Build configuration list for PBXNativeTarget "RaybanTests" */;
+			buildPhases = (
+				3573BA5F1C1B3B7F00D6852F /* Sources */,
+				3573BA601C1B3B7F00D6852F /* Frameworks */,
+				3573BA611C1B3B7F00D6852F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3573BA651C1B3B7F00D6852F /* PBXTargetDependency */,
+			);
+			name = RaybanTests;
+			productName = RaybanTests;
+			productReference = 3573BA631C1B3B7F00D6852F /* RaybanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3573BA6D1C1B3B7F00D6852F /* RaybanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3573BA7D1C1B3B7F00D6852F /* Build configuration list for PBXNativeTarget "RaybanUITests" */;
+			buildPhases = (
+				3573BA6A1C1B3B7F00D6852F /* Sources */,
+				3573BA6B1C1B3B7F00D6852F /* Frameworks */,
+				3573BA6C1C1B3B7F00D6852F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3573BA701C1B3B7F00D6852F /* PBXTargetDependency */,
+			);
+			name = RaybanUITests;
+			productName = RaybanUITests;
+			productReference = 3573BA6E1C1B3B7F00D6852F /* RaybanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3573BA471C1B3B7F00D6852F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = A;
+				TargetAttributes = {
+					3573BA4E1C1B3B7F00D6852F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					3573BA621C1B3B7F00D6852F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3573BA4E1C1B3B7F00D6852F;
+					};
+					3573BA6D1C1B3B7F00D6852F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 3573BA4E1C1B3B7F00D6852F;
+					};
+				};
+			};
+			buildConfigurationList = 3573BA4A1C1B3B7F00D6852F /* Build configuration list for PBXProject "Rayban" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3573BA461C1B3B7F00D6852F;
+			productRefGroup = 3573BA501C1B3B7F00D6852F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3573BA4E1C1B3B7F00D6852F /* Rayban */,
+				3573BA621C1B3B7F00D6852F /* RaybanTests */,
+				3573BA6D1C1B3B7F00D6852F /* RaybanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3573BA4D1C1B3B7F00D6852F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3573BA5A1C1B3B7F00D6852F /* Assets.xcassets in Resources */,
+				3573BA5D1C1B3B7F00D6852F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3573BA611C1B3B7F00D6852F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3573BA6C1C1B3B7F00D6852F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3573BA4B1C1B3B7F00D6852F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3573BA551C1B3B7F00D6852F /* ViewController.swift in Sources */,
+				3573BA531C1B3B7F00D6852F /* AppDelegate.swift in Sources */,
+				3573BA581C1B3B7F00D6852F /* Rayban.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3573BA5F1C1B3B7F00D6852F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3573BA681C1B3B7F00D6852F /* RaybanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3573BA6A1C1B3B7F00D6852F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3573BA731C1B3B7F00D6852F /* RaybanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3573BA651C1B3B7F00D6852F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3573BA4E1C1B3B7F00D6852F /* Rayban */;
+			targetProxy = 3573BA641C1B3B7F00D6852F /* PBXContainerItemProxy */;
+		};
+		3573BA701C1B3B7F00D6852F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3573BA4E1C1B3B7F00D6852F /* Rayban */;
+			targetProxy = 3573BA6F1C1B3B7F00D6852F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3573BA5B1C1B3B7F00D6852F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3573BA5C1C1B3B7F00D6852F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3573BA751C1B3B7F00D6852F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3573BA761C1B3B7F00D6852F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3573BA781C1B3B7F00D6852F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Rayban/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.Rayban;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3573BA791C1B3B7F00D6852F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Rayban/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.Rayban;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3573BA7B1C1B3B7F00D6852F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RaybanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayban.app/Contents/MacOS/Rayban";
+			};
+			name = Debug;
+		};
+		3573BA7C1C1B3B7F00D6852F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RaybanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayban.app/Contents/MacOS/Rayban";
+			};
+			name = Release;
+		};
+		3573BA7E1C1B3B7F00D6852F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RaybanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rayban;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3573BA7F1C1B3B7F00D6852F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = RaybanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rayban;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3573BA4A1C1B3B7F00D6852F /* Build configuration list for PBXProject "Rayban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3573BA751C1B3B7F00D6852F /* Debug */,
+				3573BA761C1B3B7F00D6852F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3573BA771C1B3B7F00D6852F /* Build configuration list for PBXNativeTarget "Rayban" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3573BA781C1B3B7F00D6852F /* Debug */,
+				3573BA791C1B3B7F00D6852F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3573BA7A1C1B3B7F00D6852F /* Build configuration list for PBXNativeTarget "RaybanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3573BA7B1C1B3B7F00D6852F /* Debug */,
+				3573BA7C1C1B3B7F00D6852F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3573BA7D1C1B3B7F00D6852F /* Build configuration list for PBXNativeTarget "RaybanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3573BA7E1C1B3B7F00D6852F /* Debug */,
+				3573BA7F1C1B3B7F00D6852F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3573BA561C1B3B7F00D6852F /* Rayban.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3573BA571C1B3B7F00D6852F /* Rayban.xcdatamodel */,
+			);
+			currentVersion = 3573BA571C1B3B7F00D6852F /* Rayban.xcdatamodel */;
+			path = Rayban.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3573BA471C1B3B7F00D6852F /* Project object */;
+}
