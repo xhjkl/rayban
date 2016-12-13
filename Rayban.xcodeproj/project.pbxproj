@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351DC3421DFF279000253E9E /* Filewatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351DC3411DFF279000253E9E /* Filewatch.swift */; };
+		35625E3D1DFE958B0078768E /* GLESRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35625E3C1DFE958B0078768E /* GLESRenderer.swift */; };
+		35625E401DFE97590078768E /* RendererProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35625E3F1DFE97590078768E /* RendererProtocol.swift */; };
 		3573BA531C1B3B7F00D6852F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA521C1B3B7F00D6852F /* AppDelegate.swift */; };
-		3573BA551C1B3B7F00D6852F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA541C1B3B7F00D6852F /* ViewController.swift */; };
-		3573BA581C1B3B7F00D6852F /* Rayban.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA561C1B3B7F00D6852F /* Rayban.xcdatamodeld */; };
 		3573BA5A1C1B3B7F00D6852F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3573BA591C1B3B7F00D6852F /* Assets.xcassets */; };
 		3573BA5D1C1B3B7F00D6852F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3573BA5B1C1B3B7F00D6852F /* Main.storyboard */; };
-		3573BA681C1B3B7F00D6852F /* RaybanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA671C1B3B7F00D6852F /* RaybanTests.swift */; };
 		3573BA731C1B3B7F00D6852F /* RaybanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA721C1B3B7F00D6852F /* RaybanUITests.swift */; };
-		35A2F4C91C206C17000BAD98 /* ObservedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2F4C81C206C17000BAD98 /* ObservedFile.swift */; };
-		35A2F4CB1C206CF6000BAD98 /* ObservedSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A2F4CA1C206CF6000BAD98 /* ObservedSource.swift */; };
-		35CFF6CE1C1DF4BF00855080 /* FloaterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFF6CD1C1DF4BF00855080 /* FloaterWindow.swift */; };
-		35CFF6D01C1EC00D00855080 /* FloaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFF6CF1C1EC00D00855080 /* FloaterView.swift */; };
-		35CFF6D21C1EC6D300855080 /* ShaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFF6D11C1EC6D300855080 /* ShaderView.swift */; };
+		3574806C1E02989D00B70DC0 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574806B1E02989D00B70DC0 /* Parse.swift */; };
+		3594F2391DFD899F004F8ABF /* RaybanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3573BA671C1B3B7F00D6852F /* RaybanTests.swift */; };
+		35CFF6CE1C1DF4BF00855080 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFF6CD1C1DF4BF00855080 /* MainWindow.swift */; };
+		35CFF6D01C1EC00D00855080 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFF6CF1C1EC00D00855080 /* MainView.swift */; };
+		35CFF6D21C1EC6D300855080 /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFF6D11C1EC6D300855080 /* RenderView.swift */; };
 		35CFF6D41C1EC8D700855080 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CFF6D31C1EC8D700855080 /* OpenGL.framework */; };
-		35EE19051C24281700441DBD /* Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EE19041C24281700441DBD /* Observed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		351DC3411DFF279000253E9E /* Filewatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filewatch.swift; sourceTree = "<group>"; };
+		35625E3C1DFE958B0078768E /* GLESRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLESRenderer.swift; sourceTree = "<group>"; };
+		35625E3F1DFE97590078768E /* RendererProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RendererProtocol.swift; sourceTree = "<group>"; };
 		3573BA4F1C1B3B7F00D6852F /* Rayban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rayban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3573BA521C1B3B7F00D6852F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3573BA541C1B3B7F00D6852F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3573BA571C1B3B7F00D6852F /* Rayban.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rayban.xcdatamodel; sourceTree = "<group>"; };
 		3573BA591C1B3B7F00D6852F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3573BA5C1C1B3B7F00D6852F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3573BA5E1C1B3B7F00D6852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,13 +54,11 @@
 		3573BA6E1C1B3B7F00D6852F /* RaybanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaybanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3573BA721C1B3B7F00D6852F /* RaybanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaybanUITests.swift; sourceTree = "<group>"; };
 		3573BA741C1B3B7F00D6852F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35A2F4C81C206C17000BAD98 /* ObservedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservedFile.swift; sourceTree = "<group>"; };
-		35A2F4CA1C206CF6000BAD98 /* ObservedSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservedSource.swift; sourceTree = "<group>"; };
-		35CFF6CD1C1DF4BF00855080 /* FloaterWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloaterWindow.swift; sourceTree = "<group>"; };
-		35CFF6CF1C1EC00D00855080 /* FloaterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloaterView.swift; sourceTree = "<group>"; };
-		35CFF6D11C1EC6D300855080 /* ShaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderView.swift; sourceTree = "<group>"; };
+		3574806B1E02989D00B70DC0 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
+		35CFF6CD1C1DF4BF00855080 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		35CFF6CF1C1EC00D00855080 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		35CFF6D11C1EC6D300855080 /* RenderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
 		35CFF6D31C1EC8D700855080 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		35EE19041C24281700441DBD /* Observed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35625E3E1DFE95930078768E /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				35625E3C1DFE958B0078768E /* GLESRenderer.swift */,
+				35625E3F1DFE97590078768E /* RendererProtocol.swift */,
+			);
+			name = Render;
+			sourceTree = "<group>";
+		};
 		3573BA461C1B3B7F00D6852F = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +124,7 @@
 				3573BA521C1B3B7F00D6852F /* AppDelegate.swift */,
 				3573BA5B1C1B3B7F00D6852F /* Main.storyboard */,
 				3573BA5E1C1B3B7F00D6852F /* Info.plist */,
-				3573BA561C1B3B7F00D6852F /* Rayban.xcdatamodeld */,
+				35625E3E1DFE95930078768E /* Render */,
 				35FE12AA1C2300B60088B62A /* Control */,
 				35FE12AB1C2300C30088B62A /* Logic */,
 			);
@@ -145,10 +152,9 @@
 		35FE12AA1C2300B60088B62A /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				35CFF6CD1C1DF4BF00855080 /* FloaterWindow.swift */,
-				35CFF6CF1C1EC00D00855080 /* FloaterView.swift */,
-				35CFF6D11C1EC6D300855080 /* ShaderView.swift */,
-				3573BA541C1B3B7F00D6852F /* ViewController.swift */,
+				35CFF6CD1C1DF4BF00855080 /* MainWindow.swift */,
+				35CFF6CF1C1EC00D00855080 /* MainView.swift */,
+				35CFF6D11C1EC6D300855080 /* RenderView.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -156,9 +162,8 @@
 		35FE12AB1C2300C30088B62A /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				35A2F4C81C206C17000BAD98 /* ObservedFile.swift */,
-				35EE19041C24281700441DBD /* Observed.swift */,
-				35A2F4CA1C206CF6000BAD98 /* ObservedSource.swift */,
+				351DC3411DFF279000253E9E /* Filewatch.swift */,
+				3574806B1E02989D00B70DC0 /* Parse.swift */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -226,18 +231,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = A;
 				TargetAttributes = {
 					3573BA4E1C1B3B7F00D6852F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					3573BA621C1B3B7F00D6852F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3573BA4E1C1B3B7F00D6852F;
 					};
 					3573BA6D1C1B3B7F00D6852F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3573BA4E1C1B3B7F00D6852F;
 					};
 				};
@@ -293,15 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3573BA551C1B3B7F00D6852F /* ViewController.swift in Sources */,
-				35EE19051C24281700441DBD /* Observed.swift in Sources */,
-				35CFF6D21C1EC6D300855080 /* ShaderView.swift in Sources */,
-				35A2F4CB1C206CF6000BAD98 /* ObservedSource.swift in Sources */,
+				35CFF6D21C1EC6D300855080 /* RenderView.swift in Sources */,
+				3574806C1E02989D00B70DC0 /* Parse.swift in Sources */,
+				351DC3421DFF279000253E9E /* Filewatch.swift in Sources */,
+				35625E3D1DFE958B0078768E /* GLESRenderer.swift in Sources */,
 				3573BA531C1B3B7F00D6852F /* AppDelegate.swift in Sources */,
-				3573BA581C1B3B7F00D6852F /* Rayban.xcdatamodeld in Sources */,
-				35CFF6CE1C1DF4BF00855080 /* FloaterWindow.swift in Sources */,
-				35A2F4C91C206C17000BAD98 /* ObservedFile.swift in Sources */,
-				35CFF6D01C1EC00D00855080 /* FloaterView.swift in Sources */,
+				35CFF6CE1C1DF4BF00855080 /* MainWindow.swift in Sources */,
+				35625E401DFE97590078768E /* RendererProtocol.swift in Sources */,
+				35CFF6D01C1EC00D00855080 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3573BA681C1B3B7F00D6852F /* RaybanTests.swift in Sources */,
+				3594F2391DFD899F004F8ABF /* RaybanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,8 +368,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -384,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -405,8 +414,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -422,9 +433,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -438,8 +450,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.Rayban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -453,7 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.Rayban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -466,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayban.app/Contents/MacOS/Rayban";
 			};
 			name = Debug;
@@ -479,6 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayban.app/Contents/MacOS/Rayban";
 			};
 			name = Release;
@@ -491,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Rayban;
 				USES_XCTRUNNER = YES;
 			};
@@ -504,6 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xhjkl.RaybanUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Rayban;
 				USES_XCTRUNNER = YES;
 			};
@@ -549,19 +565,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3573BA561C1B3B7F00D6852F /* Rayban.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3573BA571C1B3B7F00D6852F /* Rayban.xcdatamodel */,
-			);
-			currentVersion = 3573BA571C1B3B7F00D6852F /* Rayban.xcdatamodel */;
-			path = Rayban.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3573BA471C1B3B7F00D6852F /* Project object */;
 }

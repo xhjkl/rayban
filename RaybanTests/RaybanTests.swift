@@ -1,9 +1,5 @@
 //
-//  RaybanTests.swift
 //  RaybanTests
-//
-//  Created by Denis Makarenko on 11/12/15.
-//  Copyright © 2015 A. All rights reserved.
 //
 
 import XCTest
@@ -28,7 +24,7 @@ class RaybanTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

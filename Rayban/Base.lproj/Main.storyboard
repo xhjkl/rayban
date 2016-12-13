@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D12b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9527.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
@@ -410,7 +410,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Rayban" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="FloaterWindow" customModule="Rayban" customModuleProvider="target">
+                    <window key="window" title="Rayban" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="MainWindow" customModule="Rayban" customModuleProvider="target">
                         <windowStyleMask key="styleMask" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="560" y="400" width="480" height="270"/>
@@ -424,11 +424,11 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Rayban" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl" customClass="FloaterView" customModule="Rayban" customModuleProvider="target">
+                <viewController id="XfG-lQ-9wD" customClass="MainViewController" customModule="Rayban" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl" customClass="MainView" customModule="Rayban" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="290"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -450,7 +450,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value=""/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="quitHasBeenClicked:" target="XfG-lQ-9wD" id="Dra-5O-wMM"/>
+                                            <action selector="quitButtonHasBeenClicked:" target="XfG-lQ-9wD" id="yeP-ka-PaE"/>
                                         </connections>
                                     </button>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YU9-Mg-0oA">
@@ -458,7 +458,7 @@
                                         <gestureRecognizers>
                                             <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="tUk-Xv-EgD">
                                                 <connections>
-                                                    <action selector="currentShaderHasBeenClicked:" target="XfG-lQ-9wD" id="FmJ-d2-9ef"/>
+                                                    <action selector="currentShaderFieldHasBeenClicked:" target="XfG-lQ-9wD" id="p79-3U-5uL"/>
                                                 </connections>
                                             </clickGestureRecognizer>
                                         </gestureRecognizers>
@@ -479,7 +479,7 @@
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
-                                            <action selector="moreHasBeenClicked:" target="XfG-lQ-9wD" id="67s-kZ-SWn"/>
+                                            <action selector="moreButtonHasBeenClicked:" target="XfG-lQ-9wD" id="Mvl-66-MYv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -498,31 +498,15 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
-                            <openGLView useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVS-yl-ZfI" customClass="ShaderView" customModule="Rayban" customModuleProvider="target">
+                            <openGLView useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVS-yl-ZfI" customClass="RenderView" customModule="Rayban" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24" width="480" height="242"/>
                             </openGLView>
-                            <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2MO-4P-h78" userLabel="Bottom Stack">
+                            <stackView distribution="equalSpacing" orientation="vertical" alignment="leading" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2MO-4P-h78" userLabel="Bottom Stack">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="24"/>
-                                <subviews>
-                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O8P-Eq-A1P" userLabel="Status">
-                                        <rect key="frame" x="6" y="4" width="476" height="17"/>
-                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" state="on" id="Cig-QQ-e1r">
-                                            <font key="font" metaFont="systemThin" size="13"/>
-                                            <color key="textColor" red="0.79916557591623039" green="0.79916557591623039" blue="0.79916557591623039" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
-                                        </textFieldCell>
-                                    </textField>
-                                </subviews>
-                                <edgeInsets key="edgeInsets" left="8" right="0.0" top="0.0" bottom="0.0"/>
+                                <edgeInsets key="edgeInsets" left="8" right="0.0" top="0.0" bottom="8"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="FSY-rK-GF6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="FSY-rK-GF6"/>
                                 </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
                             </stackView>
                         </subviews>
                         <constraints>
@@ -539,7 +523,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="currentShader" destination="YU9-Mg-0oA" id="uc4-9w-IXh"/>
+                        <outlet property="bottomStack" destination="2MO-4P-h78" id="Zwi-Cl-yH3"/>
+                        <outlet property="currentShaderField" destination="YU9-Mg-0oA" id="tRK-JR-xYu"/>
+                        <outlet property="renderView" destination="YVS-yl-ZfI" id="TDP-QQ-Avo"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -555,34 +541,30 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="horizontal" alignment="firstBaseline" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" fixedFrame="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JMC-d6-ba8">
-                                <rect key="frame" x="38" y="183" width="180" height="17"/>
+                                <rect key="frame" x="47" y="179" width="163" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AAZ-HZ-kO7">
-                                        <rect key="frame" x="-2" y="0.0" width="64" height="17"/>
+                                        <rect key="frame" x="-2" y="3" width="64" height="17"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Template:" id="S1D-cb-ACF">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" misplaced="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9a-KN-bjB">
-                                        <rect key="frame" x="68" y="1" width="112" height="16"/>
-                                        <subviews>
-                                            <button translatesAutoresizingMaskIntoConstraints="NO" id="iz0-pR-QJU">
-                                                <rect key="frame" x="-1" y="-1" width="115" height="18"/>
-                                                <buttonCell key="cell" type="radio" title="Template Items" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="uQb-vY-pVs">
-                                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                            </button>
-                                        </subviews>
-                                        <visibilityPriorities>
-                                            <integer value="1000"/>
-                                        </visibilityPriorities>
-                                        <customSpacing>
-                                            <real value="3.4028234663852886e+38"/>
-                                        </customSpacing>
-                                    </stackView>
+                                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-tU-Bk8" userLabel="Template Choice">
+                                        <rect key="frame" x="66" y="-3" width="100" height="26"/>
+                                        <popUpButtonCell key="cell" type="push" title="tool.gl" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" inset="2" selectedItem="3FC-mv-U6c" id="13d-1A-d9a" userLabel="Template Choice Cell">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="fkW-d3-xhg">
+                                                <items>
+                                                    <menuItem title="tool.gl" state="on" id="3FC-mv-U6c"/>
+                                                    <menuItem title="Shadertoy" id="p7m-YP-M6I"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                    </popUpButton>
                                 </subviews>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
