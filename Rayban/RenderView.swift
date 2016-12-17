@@ -51,7 +51,9 @@ class RenderView: NSOpenGLView {
       nextSource = nil
     }
 
-    renderer.yieldFrame()
+    let size = (Float64(frame.size.width), Float64(frame.size.height))
+    let time = monotonicTime()
+    renderer.yieldFrame(size: size, time: time)
 
     CGLFlushDrawable(self.openGLContext!.cglContextObj!)
   }
@@ -62,6 +64,13 @@ class RenderView: NSOpenGLView {
 
   private func recompile(_ source: String) {
     renderer.setSource(source)
+  }
+
+  private func monotonicTime() -> Float64 {
+    var tb: mach_timebase_info_data_t = mach_timebase_info_data_t(numer: 0, denom: 1)
+    mach_timebase_info(&tb)
+    let nanoseconds = mach_absolute_time() * UInt64(tb.numer) / UInt64(tb.denom)
+    return Float64(nanoseconds) * 1e-9
   }
 
   deinit {

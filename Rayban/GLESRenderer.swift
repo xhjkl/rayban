@@ -6,17 +6,17 @@ import Cocoa
 import OpenGL.GL3
 
 fileprivate let passThroughVertSrc = "#version 100\n"
-  + "attribute vec2 position;"
-  + "varying vec2 Position;"
+  + "attribute vec2 attr;"
+  + "varying vec2 position;"
   + "void main() {"
-  + "gl_Position = vec4((Position = position), 0.0, 1.0);"
+  + "gl_Position = vec4((position = attr), 0.0, 1.0);"
   + "}"
 
 fileprivate let passThroughFragSrc = "#version 100\n"
   + "uniform sampler2D texture;"
-  + "uniform vec2 resolution;"
+  + "uniform vec2 density;"
   + "void main() {"
-  + "gl_FragColor = texture2D(texture, gl_FragCoord.xy / resolution);"
+  + "gl_FragColor = texture2D(texture, gl_FragCoord.xy * density);"
   + "}"
 
 fileprivate let unitQuadVertices = Array<GLfloat>([
@@ -34,9 +34,9 @@ class GLESRenderer: Renderer {
   private var vertexArrayId = GLuint(0)
   private var unitQuadBufferId = GLuint(0)
 
-  private var timeUniform: GLuint? = nil
-  private var densityUniform: GLuint? = nil
-  private var resolutionUniform: GLuint? = nil
+  private var timeUniform: GLint? = nil
+  private var densityUniform: GLint? = nil
+  private var resolutionUniform: GLint? = nil
 
   var logListener: RenderLogListener? = nil
 
@@ -71,8 +71,14 @@ class GLESRenderer: Renderer {
     glUseProgram(progId)
   }
 
-  func yieldFrame() {
+  func yieldFrame(size: (width: Float64, height: Float64), time: Float64) {
+    glUniform1f(timeUniform ?? -1, GLfloat(time))
+    glUniform2f(densityUniform ?? -1, GLfloat(1.0 / size.width), GLfloat(1.0 / size.height))
+    glUniform2f(resolutionUniform ?? -1, GLfloat(size.width), GLfloat(size.height))
+    let _ = glGetError()
+
     glClear(GLbitfield(GL_COLOR_BUFFER_BIT))
+    glViewport(0, 0, GLsizei(size.width), GLsizei(size.height))
     glDrawArrays(GLenum(GL_TRIANGLE_STRIP), 0, 4)
   }
 
@@ -133,7 +139,7 @@ class GLESRenderer: Renderer {
       return nil
     }
 
-    glBindAttribLocation(progId, 0, "position")
+    glBindAttribLocation(progId, 0, "attr")
 
     glAttachShader(progId, vertId)
     glAttachShader(progId, fragId)
@@ -148,6 +154,10 @@ class GLESRenderer: Renderer {
       emitReports(per: log)
       return nil
     }
+
+    timeUniform = glGetUniformLocation(progId, "time")
+    densityUniform = glGetUniformLocation(progId, "density")
+    resolutionUniform = glGetUniformLocation(progId, "resolution")
     
     return progId
   }

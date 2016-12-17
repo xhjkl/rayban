@@ -150,11 +150,15 @@ class MainViewController: NSViewController {
   func clearMessages() {
     DispatchQueue.main.async { [unowned self] in
       self.bottomStack.arrangedSubviews.forEach { $0.removeFromSuperview() }
+      self.view.superview?.needsDisplay = true
     }
   }
 
   func addMessage(severity: RenderLogMessageSeverity, header: String, body: String) {
-    bottomStack.addArrangedSubview(makeReportView(severity, header, body))
+    DispatchQueue.main.async { [unowned self] in
+      self.bottomStack.addArrangedSubview(self.makeReportView(severity, header, body))
+      self.view.superview?.needsDisplay = true
+    }
   }
 
   private func complainAboutFS(error: Error, filewatch working: Bool) {

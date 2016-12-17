@@ -2,7 +2,6 @@
 //  Abstract renderer
 //
 
-
 // What kind of diagnostics graphics compiler could emit
 //
 enum RenderLogMessageSeverity {
@@ -40,5 +39,5 @@ protocol Renderer {
 
   // Produce a single unit of imagery to the screen
   //
-  func yieldFrame()
+  func yieldFrame(size: (width: Float64, height: Float64), time: Float64)
 }
