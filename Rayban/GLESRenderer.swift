@@ -20,10 +20,10 @@ fileprivate let passThroughFragSrc = "#version 100\n"
   + "}"
 
 fileprivate let unitQuadVertices = Array<GLfloat>([
-  +1.0, -1.0,
-  -1.0, -1.0,
-  +1.0, +1.0,
-  -1.0, +1.0,
+  GLfloat(+1.0), GLfloat(-1.0),
+  GLfloat(-1.0), GLfloat(-1.0),
+  GLfloat(+1.0), GLfloat(+1.0),
+  GLfloat(-1.0), GLfloat(+1.0),
 ])
 
 // OpenGL ES 2

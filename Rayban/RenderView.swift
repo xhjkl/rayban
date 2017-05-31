@@ -55,7 +55,7 @@ class RenderView: NSOpenGLView {
     let time = monotonicTime()
     renderer.yieldFrame(size: size, time: time)
 
-    CGLFlushDrawable(self.openGLContext!.cglContextObj!)
+    CGLFlushDrawable(openGLContext!.cglContextObj!)
   }
 
   func setSource(_ source: String) {

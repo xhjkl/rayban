@@ -55,18 +55,12 @@ class MainViewController: NSViewController {
     if result != NSFileHandlingPanelOKButton {
       NSApp.terminate(self)
     }
-    openPanel.orderOut(self)
+    openPanel.close()
 
     let path = openPanel.urls.first!.path
     targetPath = path
 
     filewatch.setTarget(path: targetPath)
-  }
-
-  override var representedObject: Any? {
-    didSet {
-      // Update the view, if already loaded.
-    }
   }
 
   private func targetFilenameDidChange(path: String) {
