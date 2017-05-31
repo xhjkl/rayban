@@ -7,7 +7,7 @@
 * Enjoy
 
 # Inputs
-* `uniform lowp float time` &mdash; monotonic seconds
-* `uniform lowp vec2 density` &mdash; reciprocal of resolution
-* `uniform lowp vec2 resolution` &mdash; width and height in pixels
-* `varying lowp vec2 position` &mdash; (-1 -1) at the bottom left, (+1 +1) at the top right
+* `uniform mediump float time` &mdash; monotonic seconds
+* `uniform mediump vec2 density` &mdash; reciprocal of resolution
+* `uniform mediump vec2 resolution` &mdash; width and height in pixels
+* `varying mediump vec2 position` &mdash; (-1 -1) at the bottom left, (+1 +1) at the top right
